@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>Foto aleatoria</title>
+		<script type="text/javascript" charset="utf-8">
+       function aleatotio(){
+				 var miArray = new Array(2);
+				 miArray[0]="http://www.forodefotos.com/attachments/fotos-de-animales-acuaticos/15594d1293056142-fotos-de-tiburones-blancos-fotos-de-tiburones-blancos.jpg";
+				 miArray[1]= "http://4.bp.blogspot.com/_xOlWE-TU_RU/TPOW75No27I/AAAAAAAAAAM/WsRtlShlW-c/s1600/caballos-g%255B1%255D.jpg"
+				 miArray[2]="https://sp.yimg.com/xj/th?id=OIP.M73ee0a00be539d2a2a3248bd73762088H0&pid=15.1&P=0&w=300&h=300"
+         var resultado = document.getElementById("foto");
+				 i = parseInt(Math.random()*3);
+         resultado.innerHTML = '<img src ="' + miArray[i] + '">' ;
+       }
+     </script>
+	</head>
+	<body>
+		<a href="javascript: aleatotio()">Pincha Aqui..</a>
+		<div id = "foto"> </div>
+	</body>
+</html>
